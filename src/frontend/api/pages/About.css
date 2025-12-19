@@ -1,0 +1,212 @@
+/* =========================
+   ABOUT PAGE – FULL CSS
+========================= */
+
+/* Page background */
+.about-wrapper {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb);
+}
+
+/* Glassmorphism card */
+.about-card {
+    width: 100%;
+    max-width: 900px;
+    padding: 35px 40px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    animation: fadeSlide 0.8s ease;
+    box-sizing: border-box;
+}
+
+/* Heading */
+.about-card h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+    color: #7b2ff7;
+    font-weight: 600;
+}
+
+/* Section blocks */
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 22px;
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.35);
+    transition: all 0.3s ease;
+}
+
+/* Hover animation */
+.about-section:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+.about-icon {
+    font-size: 34px;
+    color: #ee0979;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+/* Section titles */
+.about-section h3 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Paragraph text */
+.about-section p {
+    margin-top: 6px;
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Entry animation */
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   DARK MODE SUPPORT
+========================= */
+@media (prefers-color-scheme: dark) {
+
+    .about-wrapper {
+        background: linear-gradient(120deg, #1f1c2c, #302b63, #24243e);
+    }
+
+    .about-card {
+        background: rgba(0, 0, 0, 0.35);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .about-card h2 {
+        color: #fbc2eb;
+    }
+
+    .about-section {
+        background: rgba(0, 0, 0, 0.45);
+    }
+
+    .about-section h3 {
+        color: #f1f1f1;
+    }
+
+    .about-section p {
+        color: #dcdcdc;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+    .about-card {
+        padding: 28px 24px;
+    }
+
+    .about-card h2 {
+        font-size: 26px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-icon {
+        font-size: 30px;
+    }
+
+    .about-section h3 {
+        font-size: 19px;
+    }
+
+    .about-section p {
+        font-size: 15px;
+    }
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+@media (min-width: 769px) and (max-width: 1023px) {
+
+    .about-card {
+        padding: 32px 36px;
+    }
+
+    .about-card h2 {
+        font-size: 28px;
+    }
+
+    .about-section {
+        gap: 16px;
+    }
+
+    .about-icon {
+        font-size: 32px;
+    }
+
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .about-section p {
+        font-size: 15.5px;
+    }
+}
+
+/* =========================
+   DESKTOP LARGE SCREENS
+========================= */
+@media (min-width: 1024px) {
+
+    .about-card {
+        padding: 40px 45px;
+    }
+
+    .about-card h2 {
+        font-size: 32px;
+    }
+
+    .about-section {
+        gap: 20px;
+    }
+
+    .about-icon {
+        font-size: 36px;
+    }
+
+    .about-section h3 {
+        font-size: 21px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
+}

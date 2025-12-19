@@ -1,0 +1,24 @@
+.footer {
+    margin-top: 40px;
+    padding: 16px 0;
+    text-align: center;
+    background: linear-gradient(90deg, #ff6a00, #ee0979, #8e2de2);
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.footer p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+    .footer {
+        font-size: 13px;
+        padding: 14px 0;
+    }
+}
+
